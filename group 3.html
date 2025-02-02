@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Form</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Job Application Form</legend>
+        <label>
+          Full Name:
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Enter your full name"
+          />
+        </label>
+        <br /><br />
+        <label>
+          Email:
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="Enter your email"
+          />
+        </label>
+        <br /><br />
+        <label>
+          Password:
+          <input
+            type="password"
+            name="user-password"
+            id="user-password"
+            required
+          />
+        </label>
+        <br /><br />
+        <label>
+          Date of Birth:
+          <input type="date" name="dateofbirth" id="dateofbirth" />
+        </label>
+        <br /><br />
+        <label>
+          Gender:
+          <input type="radio" name="male-female" id="male-female" />
+          Male
+          <input type="radio" name="male-female" id="male-female" />
+          Female
+        </label>
+        <br /><br />
+        <label>
+          Upload Resume:
+          <input type="file" name="resume" id="resume" />
+        </label>
+        <br /><br />
+        <label>
+          Skills:
+          <textarea
+            name="blog"
+            id="blog"
+            rows="5"
+            cols="30"
+            placeholder="List your skills here..."
+          ></textarea>
+        </label>
+        <br /><br />
+        <label for="roles">Job Role:</label>
+        <input list="roles" required />
+        <datalist id="roles">
+          <option value="Frontend Developer"></option>
+          <option value="Advanced Developer"></option>
+        </datalist>
+        <br /><br />
+        <label>
+          Experience Level:
+          <input type="text" name="exp" id="exp" placeholder="Mid Level" />
+        </label>
+        <br /><br />
+        <label>
+          Expected Salary ($):
+          <input
+            type="range"
+            name="salary"
+            id="salary"
+            min="1000"
+            max="5000"
+            step="100"
+          />5000
+        </label>
+        <br /><br />
+        <label>
+          <input type="checkbox" name="agree" id="agree" />
+          I agree to the terms and conditions.
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
